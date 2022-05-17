@@ -1,9 +1,19 @@
 import '../styles/globals.css'
+import Head from "next/head";
 import Layout from '../comps/Layout'
+// import 'bootstrap/dist/css/bootstrap.css'
+
 function MyApp({ Component, pageProps }) {
-  return <Layout>
-    <Component {...pageProps} />
-  </Layout>
+  return (
+    <>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </>
+  )
 }
 
 export default MyApp

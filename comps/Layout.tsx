@@ -4,12 +4,12 @@ import React from 'react'
 
 type Props = {}
 
-const Layout = ({children}) => {
+const Layout = ({ children }) => {
   return (
     <div className="content">
-        <Navbar />
-            {children}
-        <Footer />
+      <Navbar />
+      {children}
+      {/* <Footer /> */}
     </div>
   )
 }

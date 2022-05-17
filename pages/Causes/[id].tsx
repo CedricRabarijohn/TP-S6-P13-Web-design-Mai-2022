@@ -1,7 +1,7 @@
 import React from 'react'
 type Props = {}
 
-export const getStaticPaths = async() => {
+const getStaticPaths = async() => {
     const res = await fetch('http://localhost:3000/api/causes')
     const data = await res.json()
     const paths = data.map(cause => {
@@ -17,7 +17,7 @@ export const getStaticPaths = async() => {
     }
 }
 
-export const getStaticProps = async(context) => {
+const getStaticProps = async(context) => {
     const id = context.params.id
     const res = await fetch('http://localhost:3000/api/causes/'+id)
     const data = await res.json()
@@ -31,7 +31,8 @@ export const getStaticProps = async(context) => {
 const Details = ({cause}) => {
   return (
     <div>
-        <h1>{cause.title}</h1>
+        Title
+        {/* <h1>{cause.title}</h1> */}
     </div>
   )
 }
