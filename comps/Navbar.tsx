@@ -9,8 +9,6 @@ const Navbar = (props: Props) => {
         <Link href='/'><a>Logo</a></Link>
       </div>
       <div className="menu">
-        <div>Causes</div>
-        <div>Conséquences</div>
         <div>Login as admin</div>
       </div>
     </nav>
