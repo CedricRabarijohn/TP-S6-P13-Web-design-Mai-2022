@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'next/Link'
+import Link from 'next/link'
 type Props = {}
 //https://www.amnesty.org/fr/what-we-do/climate-change/?utm_source=google&utm_medium=cpc&gclid=CjwKCAjwj42UBhAAEiwACIhADl-Zf1vg9RGoFzZdKIeRoGPgfGO2O8RF4LnxTn9EzpH1X_cikMNPEBoC9HwQAvD_BwE
 const HomePage = (props: Props) => {
@@ -12,7 +12,7 @@ const HomePage = (props: Props) => {
         <div className="defintionContainer">
           <h2>Definition</h2>
           <div className='definition'>
-            De façon plus précise, lorsque l’on parle du réchauffement climatique,
+            De façon plus précise, lorsque l’on parle du <strong>réchauffement climatique</strong>,
             on parle de l’augmentation des températures liées à l’activité industrielle
             et notamment à l’effet de serre : on parle donc parfois du réchauffement
             climatique dit « d’origine anthropique » (d’origine humaine).
@@ -22,7 +22,7 @@ const HomePage = (props: Props) => {
             comment les activités des sociétés humaines provoque ce réchauffement.
             Ces scientifiques sont regroupés au sein du GIEC
             (Groupe International d’Experts sur le Climat), et ils publient régulièrement
-            des rapports étudiant l’évolution du réchauffement climatique.
+            des rapports étudiant l’évolution du <strong>réchauffement climatique.</strong>
           </div>
         </div>
         <div className="causesContainer">
